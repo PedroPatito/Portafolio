@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;700&family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b77d3e18e8.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>onepage</title>
 </head>
 
@@ -44,8 +45,8 @@
 
     <section id="informacion-general">
         <div>
-            <h2>Un poco sobre mi</h2>
-            <p>
+            <h2 data-aos="fade-right" data-aos-duration="1200">Un poco sobre mi</h2>
+            <p data-aos="fade-right" data-aos-duration="1200">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus quia iusto sint earum autem
                 repellat iure accusantium suscipit, harum recusandae quibusdam maiores, dolor tempore temporibus, amet
                 qui provident corrupti.
@@ -64,7 +65,7 @@
     </section>
 
     <section id="informacion-tecnica">
-        <table class="tabla-tec">
+        <table class="tabla-tec" data-aos="flip-left" data-aos-duration="1200">
             <thead>
                 <tr>
                     <th colspan="2" class="titulo-tabla">lo que estoy aprendiendo</th> <!-- provisorio -->
@@ -88,7 +89,7 @@
                 </tr>
             </tbody>
         </table>
-            <p class="info-tec">
+            <p class="info-tec" data-aos="fade-left" data-aos-duration="1200">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis consequatur perspiciatis ex
                 exercitationem magnam doloremque repudiandae esse? Reiciendis deserunt facilis optio, unde est libero
                 impedit perspiciatis id nisi nihil.
@@ -96,12 +97,12 @@
                 dicta non quam ab voluptatem unde, id aperiam doloremque voluptate iusto delectus maxime cum molestiae
                 autem.
             </p>
-            <img src="../img/hero.svg" class="img-tec" alt="">
+            <img src="../img/hero.svg" class="img-tec" alt="" >
     </section>
 
     <section id="proyectos">
         <h2>Proyectos</h2>
-        <div>
+        <div data-aos="zoom-out" data-aos-duration="1200">
             <img class="img-3" src="../img/muypronto.jpg" alt="">
             <img class="img-2" src="../img/muypronto.jpg" alt="">
             <img class="img-3" src="../img/muypronto.jpg" alt=""> 
@@ -113,7 +114,7 @@
         <!-- <div>
             <h2>contacto</h2>
         </div> -->
-        <form id="formulario">
+        <form id="formulario" data-aos="fade-up" data-aos-duration="1200">
             <form>
                 <h2>contacto</h2>
                 <label> nombre: </label> <br>
@@ -141,6 +142,11 @@
         
     </footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
