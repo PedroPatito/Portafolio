@@ -2,7 +2,7 @@ html{
     font-size: 62.5%;
     margin: 0;
     padding: 0;
-    
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: "kalmunt";
@@ -76,7 +76,7 @@ header a h2{
    
 }
 /* --------------------------------nav-bar--------------------------------------- */
-.barra {
+/* .barra {
     width: 4%;
     height:4%;
     position:fixed;
@@ -158,11 +158,11 @@ header a h2{
         width: 30%;
     
     }
-}
+} */
 
 /* --------------------------------onepage.html--------------------------------------- */
 
-header{
+/* header{
     display: flex;
 
 }
@@ -171,12 +171,19 @@ header div{
     align-items: center; 
     text-align: center;    
 }
+*/
+
+.offcanvas{
+    transition: 0.6s ease;
+
+}
 
 #body-onepage{
-    font-family: "montserrat", sans-serif; 
+    font-family: "montserrat", sans-serif;
     font-size: 2rem; 
     margin: 0; 
     padding: 0;
+    
 }
 
 #informacion-general{
@@ -190,29 +197,141 @@ header div{
     background-size: cover;
    
 }
-
-#informacion-general h2{
-    margin-bottom: 5rem;
-    /* margin-top: 10rem; */
-    font-size: 4rem;
-    
-}
-
 iframe{
     height: 40vh;
     width: 40vw;
     
 }
+h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#informacion-tecnica img{  
+    height: 100vh;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+#informacion-tecnica p{
+    width: 90%; 
+    margin: 2rem;
+    text-align: center;
+
+    
+}
+
+.carousel-item{
+transition: all 0.5s;
+}
+
+.fa-html5{
+    color: orangered;
+}
+
+.fa-css3-alt{
+    color: rgb(39, 39, 165);
+}
+
+.fa-js-square{
+    color: yellow;
+}
+
+.fa-react{
+    color: lightblue;
+}
+
+.fa-git-square{
+    color: rgb(207, 73, 58);
+}
+
+.fa-bootstrap{
+    color: rgb(180, 30, 180);
+}
+
+#informacion-tecnica{
+    margin-top: 4rem;
+    color: #1f4c45;
+    
+}
+
+#proyectos h2{
+    margin: 5rem;
+    color: #1f4c45;
+}
+
+footer{
+    background-color: #1f4c45;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 15vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+    
+    footer a{
+        color: rgb(255, 255, 255);
+        padding:0.5rem;
+    }
+    footer div{
+      order:1;
+    }
+
+    #contacto{
+        height: 80vh;
+        width: 100%;
+        color: #FFF;
+        background-color: #1f4c45;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 20rem;
+        margin-bottom: 15rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        border-radius: 1%;
+        box-shadow: 1px 1px 10px black;
+    }
+    .comentarios{
+        color: #1f4c45;
+    }
+    .text-area{
+        height: 50px;
+    }
+    
+/*  @media screen and (max-width: 768px){
+        
+    iframe{
+   
+    display: none;
+    }
+} */
+/*
+#informacion-general h2{
+    margin-bottom: 5rem;
+   
+    font-size: 4rem;
+    
+}
+
+
 
 #informacion-general p{
     width: 50vw;
     margin: 1rem;
 }
 
-h2{
-    font-size: 3rem;
-    text-align: center;
-}
+
 
 td i{
     size: 5rem;
@@ -220,29 +339,12 @@ td i{
 
 #informacion-tecnica{
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "tabla-tec info-tec info-tec"
-    "tabla-tec info-tec info-tec"
-    "tabla-tec img-tec img-tec"
-    ;
     height: 100vh;
     width: 95%;
     color: #1f4c45;
     
 }
 
-table{
-    grid-area: tabla-tec;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 2rem;
-    margin-left: 1rem;
-}
 
 .info-tec{
     grid-area: info-tec;
@@ -258,11 +360,7 @@ table{
     margin: 1rem;
     text-align: center;
 }
-#informacion-tecnica img{  
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 .fa-html5{
@@ -295,7 +393,6 @@ table{
     align-items: center;
     height: 100vh;
     width: 99%;
-    /* color: #023047; */
     margin: 1rem;
     flex-wrap: wrap;
 }
@@ -417,21 +514,14 @@ footer a{
 footer div{
   order:1;
 }
-
+ */
 
 /* --------------------------------------------media query------------------------------------------------------ */
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
         
-    #titulo h1{
-        font-size: 6rem;
-      }
-      #titulo h2{
-        font-size: 3rem;
-      }
-
 iframe{
-   /*  visibility: collapse ; */
+   
    display: none;
 }
 
@@ -546,6 +636,4 @@ textarea{
     color: #FFF;  
 }
 
-
-
-}
+} */
