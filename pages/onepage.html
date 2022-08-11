@@ -44,7 +44,7 @@
     </header>
 
     <section id="informacion-general">
-        <div>
+        <div data-aos="fade-right">
             <h2 >Un poco sobre mi</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus quia iusto sint earum autem
@@ -55,17 +55,16 @@
                 amet voluptates facilis.
             </p>
         </div>
-        
             <!-- video provisorio -->
-            <iframe src="https://www.youtube.com/embed/r69ikFzUsHM"
+            <i frame src="https://www.youtube.com/embed/r69ikFzUsHM"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-       
+                allowfullscreen></i>
+
     </section>
 
     <section id="informacion-tecnica">
-        <table class="tabla-tec">
+        <table class="tabla-tec" data-aos="fade-right">
             <thead>
                 <tr>
                     <th colspan="2" class="titulo-tabla">lo que estoy aprendiendo</th> <!-- provisorio -->
@@ -89,7 +88,7 @@
                 </tr>
             </tbody>
         </table>
-            <p class="info-tec">
+            <p class="info-tec" data-aos="fade-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis consequatur perspiciatis ex
                 exercitationem magnam doloremque repudiandae esse? Reiciendis deserunt facilis optio, unde est libero
                 impedit perspiciatis id nisi nihil.
@@ -97,24 +96,22 @@
                 dicta non quam ab voluptatem unde, id aperiam doloremque voluptate iusto delectus maxime cum molestiae
                 autem.
             </p>
-            <img src="../img/hero.svg" class="img-tec" alt="" >
+            <img src="../img/hero.svg" class="img-tec" alt="" data-aos="zoom-in">
     </section>
 
     <section id="proyectos">
         <h2>Proyectos</h2>
         <div>
-            <img class="img-3" src="../img/muypronto.jpg" alt="">
-            <img class="img-2" src="../img/muypronto.jpg" alt="">
-            <img class="img-3" src="../img/muypronto.jpg" alt=""> 
+            <img class="img-3" src="../img/muypronto.jpg" alt="" data-aos="fade-right">
+            <img class="img-2" src="../img/muypronto.jpg" alt="" data-aos="fade-up">
+            <img class="img-3" src="../img/muypronto.jpg" alt="" data-aos="fade-left"> 
         </div>
 
     </section>
 
     <section id="contacto">
-        <!-- <div>
-            <h2>contacto</h2>
-        </div> -->
-        <form id="formulario">
+        <form id="formulario" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <form>
                 <h2>contacto</h2>
                 <label> nombre: </label> <br>
@@ -147,6 +144,7 @@
     <script>
         AOS.init();
       </script>
+     
 </body>
 
 </html>
