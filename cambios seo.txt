@@ -1,0 +1,7 @@
+Agregé la siguiente descripcion en el index.html:
+orientado al desarrollo web, acá muestro mis proyectos mas relevantes y las tecnologias que estoy aprendiendo.
+agregé las siguientes keywords:
+desarrollo web, portafolio, personalizado, html, css, bootstrap, sass, a pedido, diseño, interface, página, diseño responsive, custom web, presupuestos, planificacion, sitio
+cambié el title:
+Pedro Patito | desarrollo web personalizado
+Se agrego la etiqueta main, demarcando la informacion general de la página.
