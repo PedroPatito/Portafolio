@@ -1,3 +1,13 @@
+#contacto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20rem;
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+}
+
 #informacion-general {
   color: #ffffff;
   display: flex;
@@ -95,6 +105,21 @@
   margin-top: 4rem;
   color: #102824;
   text-align: center;
+}
+
+form button {
+  background: transparent;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0.5rem 0;
+  padding: 1rem 3rem;
+  border: 2px solid #ffffff;
+}
+form :hover {
+  background: transparent;
+  border: 2px solid rgba(69, 39, 160, 0.4);
 }
 
 /*# sourceMappingURL=style.css.map */

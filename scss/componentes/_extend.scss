@@ -1,0 +1,11 @@
+
+
+%caracteristicasContacto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20rem;
+    height:  nth($medidas , 1);
+    width: nth($medidas , 2);
+    color: $bg-blanco;
+}

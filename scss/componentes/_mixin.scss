@@ -1,0 +1,10 @@
+@mixin boton($fondo, $color, $fuente, $mayusculas, $espaciado,$margen, $padding,$borde){
+    background:$fondo ;
+    color: $color;
+    font-family: $fuente;
+    text-transform: $mayusculas;
+    letter-spacing: $espaciado;
+    margin: $margen;
+    padding: $padding;
+    border: $borde;
+}

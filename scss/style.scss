@@ -1,6 +1,8 @@
 @import "./componentes/variables.scss";
-@import "./componentes/listas.scss";
+@import "./componentes/listas";
 @import "./componentes/maps.scss";
+@import "./componentes/extend";
+@import "./componentes/mixin";
 
 #informacion-general{
     color: $bg-blanco;
@@ -113,5 +115,18 @@
         margin-top: nth($medidas , 7);
         color: darken($bg-verdeOscuro, 10%);
         text-align: map-get($flex, centrado );
+    }
+}
+
+#contacto{
+    @extend %caracteristicasContacto;
+}
+
+form{
+    button{
+        @include boton($fondo, $color, $fuente, $mayusculas, $espaciado,$margen, $padding,$borde);
+    }:hover{
+        background: transparent;
+        border: 2px solid rgba(69, 39, 160, .4);
     }
 }

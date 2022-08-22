@@ -1,0 +1,64 @@
+//?---------------extends
+
+//* es un paquete de propiedades, es una extencion.
+
+%disposicion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//* se implementa así, se puede llamar a todo el paquete
+
+.footer{
+    @extend %disposicion;
+}
+
+
+//* esto se escribe una sola vez, y va a ir agregando la clase, id o etiqueta a el mismo grupo de propiedades, asi::after
+
+footer, .clase, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//* de esta manera ahorramos codigo.
+
+//?--------------------operadores
+
+$ancho: 50px;
+
+header{
+    width: $ancho*2;
+}
+
+//* está en desuso, ahora se usa mas la funcion de css calcular.
+
+//?-----------------mixing
+
+//* Se crea un paquete de propiedades que todavia no estan definidos y se los definen durante el desarrollo. Sirve solo en caso puntuales. Para elementos que todavia no se save como van a ser.
+
+
+    @mixin titulos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        @include titulos();
+    }
+
+    $colors: black;
+    $ancho: 100%;
+    $borde: 20px;
+
+
+@mixin colores($colors, $ancho, $borde) {
+    background-color: $colors;
+    width: $ancho;
+    border: $borde;
+}
+// * se pueden definir en la hoja de variables, siempre y cuando esten arriba, recordar que se leen de arriba hacia abajo.
+
